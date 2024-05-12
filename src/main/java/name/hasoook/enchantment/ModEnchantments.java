@@ -14,7 +14,8 @@ public class ModEnchantments {
             new Blast(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment Blunt = register("blunt", //磨钝
             new Blunt(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
-
+    public static Enchantment Thunder = register("thunder", //闪电
+            new Thunder(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
 
 
     private static Enchantment register(String name, Enchantment enchantment) {
