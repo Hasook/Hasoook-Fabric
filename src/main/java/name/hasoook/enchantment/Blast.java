@@ -28,8 +28,9 @@ public class Blast extends Enchantment {
         return 3;
     }
 
+    //是否为诅咒
     public boolean isCursed() {
         return false;
-    }  //是否为诅咒：否
+    }
 
 }

@@ -11,10 +11,10 @@ public class Blunt extends Enchantment {
     }
 
     public float getAttackDamage(int level, EntityGroup group) {
-        return -1 * level;
+        return (float) (-0.5 + (-0.5 * level));
     }
     public int getMinPower(int level) {
-        return 3;
+        return level * 5;
     }
     public boolean isCursed() {
         return true;
