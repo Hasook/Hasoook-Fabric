@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hasoook",
+	"version": "${version}",
+	"name": "Hasoook",
+	"description": "This is my learning mod :)",
+	"authors": [
+		"Hasoook"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC BY-NC",
+	"icon": "assets/hasoook/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.hasoook.Hasoook"
+		],
+		"client": [
+			"name.hasoook.HasoookClient"
+		],
+		"fabric-datagen": [
+			"name.hasoook.HasoookDataGenerator"
+		]
+	},
+	"mixins": [
+		"hasoook.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
