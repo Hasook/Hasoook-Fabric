@@ -20,12 +20,12 @@ public class Blast extends Enchantment {
     }
 
     public int getMinPower(int level) {
-        return 3;
+        return 30;
     }
 
     //最大等级
     public int getMaxLevel() {
-        return 3;
+        return 2;
     }
 
     //是否为诅咒

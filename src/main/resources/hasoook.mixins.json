@@ -3,6 +3,7 @@
 	"package": "name.hasoook.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
+		"DimensionTypeMixin",
 		"ExampleMixin"
 	],
 	"injectors": {

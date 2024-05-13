@@ -16,7 +16,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.hasoook"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY); //模组物品
-                        entries.add(Items.WATER_BUCKET); //原版物品
+                        entries.add(Items.SUGAR); //原版物品
 
 
                     }).build());

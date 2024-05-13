@@ -17,7 +17,7 @@ public class Thunder extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 1;
+        return 30;
     }
 
     @Override
@@ -27,12 +27,19 @@ public class Thunder extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
+        // 当一个实体攻击目标时触发的方法
+
+        // 如果 攻击者为玩家 且 目标是生物实体
         if (user instanceof PlayerEntity player && target instanceof LivingEntity entity) {
+            // 如果不是在客户端进行操作
             if (!player.getWorld().isClient()) {
+                // 获取玩家所在的服务器世界
                 ServerWorld world = (ServerWorld) player.getWorld();
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, new BlockPos((int) entity.getX(), (int) entity.getY(), (int) entity.getZ()), null,false, false);
+                // 在目标位置生成闪电
+                EntityType.LIGHTNING_BOLT.spawn(world,null, null, new BlockPos((int) entity.getX(), (int) entity.getY(), (int) entity.getZ()), null, false, false);
             }
         }
+        // 调用父类的onTargetDamaged方法，实现额外的处理
         super.onTargetDamaged(user, target, level);
     }
 }
