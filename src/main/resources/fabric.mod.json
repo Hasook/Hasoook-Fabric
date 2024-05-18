@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"name.hasoook.Hasoook"
+			"com.hasoook.Hasoook"
 		],
 		"client": [
-			"name.hasoook.HasoookClient"
+			"com.hasoook.HasoookClient"
 		],
 		"fabric-datagen": [
-			"name.hasoook.HasoookDataGenerator"
+			"com.hasoook.HasoookDataGenerator"
 		]
 	},
 	"mixins": [

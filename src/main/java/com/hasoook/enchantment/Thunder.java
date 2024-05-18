@@ -1,4 +1,4 @@
-package name.hasoook.enchantment;
+package com.hasoook.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;

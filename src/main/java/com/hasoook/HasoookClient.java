@@ -1,4 +1,4 @@
-package name.hasoook;
+package com.hasoook;
 
 import net.fabricmc.api.ClientModInitializer;
 

@@ -1,6 +1,6 @@
-package name.hasoook.item;
+package com.hasoook.item;
 
-import name.hasoook.Hasoook;
+import com.hasoook.Hasoook;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

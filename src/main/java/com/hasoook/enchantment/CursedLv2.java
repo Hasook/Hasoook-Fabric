@@ -1,4 +1,4 @@
-package name.hasoook.enchantment;
+package com.hasoook.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -22,4 +22,5 @@ public class CursedLv2 extends Enchantment {
     public boolean isCursed() {
         return true;
     }
+
 }

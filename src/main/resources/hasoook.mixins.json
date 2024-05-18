@@ -1,8 +1,9 @@
 {
 	"required": true,
-	"package": "name.hasoook.mixin",
+	"package": "com.hasoook.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
+		"CreeperEntityMixin",
 		"DimensionTypeMixin",
 		"ExampleMixin"
 	],

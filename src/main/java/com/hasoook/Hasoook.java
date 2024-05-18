@@ -1,8 +1,8 @@
-package name.hasoook;
+package com.hasoook;
 
-import name.hasoook.enchantment.ModEnchantments;
-import name.hasoook.item.ModItemGroups;
-import name.hasoook.item.ModItems;
+import com.hasoook.enchantment.ModEnchantments;
+import com.hasoook.item.ModItemGroups;
+import com.hasoook.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
-package name.hasoook.enchantment;
+package com.hasoook.enchantment;
 
-import name.hasoook.Hasoook;
+import com.hasoook.Hasoook;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
