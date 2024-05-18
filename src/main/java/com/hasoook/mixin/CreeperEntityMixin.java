@@ -14,16 +14,20 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(CreeperEntity.class)
 public abstract class CreeperEntityMixin extends Entity {
 
+    /*这是从KCN_WS的mixin教程中所学习的代码，有些许修改
+    非常感谢KCN_WS*/
+
     public CreeperEntityMixin(EntityType<?> type, World world) {
         super(type, world);
     }
 
     @Inject(method = "explode" , at = @At("HEAD"), cancellable = true)
     public void mixinExplode(CallbackInfo ci) {
-        //如果执行位置不是客户端 并且 维度是地狱
+        //如果执行位置不是客户端 并且 所在世界维度是地狱
         if (!this.getWorld().isClient && this.getWorld().getRegistryKey().equals(World.NETHER)) {
             //阻止这个事件的发生
             ci.cancel();
+            //移除实体
             this.discard();
             //将当前世界中生物对方块破坏的规则值存储在名为bl变量中
             boolean bl = getWorld().getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING);

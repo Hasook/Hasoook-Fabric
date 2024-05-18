@@ -5,6 +5,7 @@
 	"mixins": [
 		"CreeperEntityMixin",
 		"DimensionTypeMixin",
+		"EnderPearlItemMixin",
 		"ExampleMixin"
 	],
 	"injectors": {
