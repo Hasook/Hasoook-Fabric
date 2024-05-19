@@ -4,6 +4,11 @@
   "enchantment.hasoook.blast": "Blast",
   "enchantment.hasoook.blunt": "Blunt",
   "enchantment.hasoook.thunder": "Thunder",
+  "enchantment.hasoook.combine": "Combine",
+  "enchantment.hasoook.void_walker": "Void Walker",
+
+  "block.hasoook.ruby_block": "Ruby Block",
+  "block.hasoook.air_block": "Air Block",
 
   "itemgroup.hasoook": "Hasoook"
 }

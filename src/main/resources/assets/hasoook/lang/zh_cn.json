@@ -4,6 +4,11 @@
   "enchantment.hasoook.blast": "爆炸",
   "enchantment.hasoook.blunt": "磨钝",
   "enchantment.hasoook.thunder": "落雷",
+  "enchantment.hasoook.combine": "兼容",
+  "enchantment.hasoook.void_walker": "虚空行者",
+
+  "block.hasoook.ruby_block": "红宝石块",
+  "block.hasoook.air_block": "空气方块",
 
   "itemgroup.hasoook": "Hasoook"
 }
