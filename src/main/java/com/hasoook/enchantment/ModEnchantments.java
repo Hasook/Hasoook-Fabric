@@ -16,6 +16,10 @@ public class ModEnchantments {
             new Blunt(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment Thunder = register("thunder", //落雷
             new Thunder(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+    public static Enchantment Combine = register("combine", //兼容
+            new Combine(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+    public static Enchantment VoidWalker = register("void_walker", //虚空行者
+            new Combine(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.FEET}));
 
 
     private static Enchantment register(String name, Enchantment enchantment) {

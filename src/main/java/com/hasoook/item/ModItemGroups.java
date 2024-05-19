@@ -1,6 +1,7 @@
 package com.hasoook.item;
 
 import com.hasoook.Hasoook;
+import com.hasoook.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY); //模组物品
                         entries.add(Items.SUGAR); //原版物品
+                        entries.add(ModBlocks.RUBY_BLOCK); //模组方块
+                        entries.add(ModBlocks.AIRBLOCK); //模组方块
 
 
                     }).build());

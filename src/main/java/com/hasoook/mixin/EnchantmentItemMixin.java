@@ -1,5 +1,4 @@
 package com.hasoook.mixin;
-
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -17,4 +16,5 @@ public class EnchantmentItemMixin {
     public boolean isAcceptableItem(ItemStack stack) {
         return true;
     }
+
 }
