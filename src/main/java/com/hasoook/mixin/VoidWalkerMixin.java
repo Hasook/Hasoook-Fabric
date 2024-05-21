@@ -7,7 +7,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -50,6 +49,7 @@ public abstract class VoidWalkerMixin extends Entity {
                 BlockPos checkPos = belowPos.add(0, -i, 0);
                 if (!world.isAir(checkPos) && world.getBlockState(checkPos).getBlock() != ModBlocks.AIRBLOCK) {
                     allAirOrAirBlock = false;
+                    break;
                 }
             }
 
@@ -65,8 +65,8 @@ public abstract class VoidWalkerMixin extends Entity {
                     }
                 }
             }
-
         }
     }
 
 }
+

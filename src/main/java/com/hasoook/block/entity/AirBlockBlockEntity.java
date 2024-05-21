@@ -5,7 +5,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
@@ -18,6 +17,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Random;
 
 public class AirBlockBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory{
     public AirBlockBlockEntity(BlockPos pos, BlockState state) {
@@ -55,11 +56,14 @@ public class AirBlockBlockEntity extends BlockEntity implements ExtendedScreenHa
         return null;
     }
 
-    int disappear = 20;
+    //空气方块的消失判定
+    int disappear = 20; //当这个数字被减完后，方块就消失
+    //如果位置不是客户端 且 随机数<0.5，disappear就减1
     public void tick(World world, BlockPos pos, BlockState state) {
-        if (!world.isClient && disappear >0) {
+        if (!world.isClient && Math.random() < 0.8) {
             disappear--;
         }
+        //disappear为0后替换为空气
         if (disappear == 0){
             world.setBlockState(pos, Blocks.AIR.getDefaultState(), Block.NOTIFY_ALL);
         }
