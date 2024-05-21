@@ -8,7 +8,7 @@
   "enchantment.hasoook.void_walker": "Void Walker",
 
   "block.hasoook.ruby_block": "Ruby Block",
-  "block.hasoook.air_block": "Air Block",
+  "block.hasoook.air_block": "§eAir Block",
 
   "itemgroup.hasoook": "Hasoook"
 }

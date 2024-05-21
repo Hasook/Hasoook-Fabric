@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.POWDER_SNOW).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block AIRBLOCK = registerBlock("air_block",
-            new AirBlock(FabricBlockSettings.copyOf(Blocks.GLASS).sounds(BlockSoundGroup.AMETHYST_BLOCK).noBlockBreakParticles()));
+            new AirBlock(FabricBlockSettings.copyOf(Blocks.GLASS).sounds(BlockSoundGroup.AMETHYST_BLOCK).noBlockBreakParticles().replaceable()));
 
 
     private static Block registerBlock(String name, Block block) {

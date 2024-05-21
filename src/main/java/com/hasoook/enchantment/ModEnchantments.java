@@ -19,7 +19,7 @@ public class ModEnchantments {
     public static Enchantment Combine = register("combine", //兼容
             new Combine(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment VoidWalker = register("void_walker", //虚空行者
-            new Combine(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.FEET}));
+            new VoidWalker(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR_FEET, new EquipmentSlot[]{EquipmentSlot.FEET}));
 
 
     private static Enchantment register(String name, Enchantment enchantment) {
