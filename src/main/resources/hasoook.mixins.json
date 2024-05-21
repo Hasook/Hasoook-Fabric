@@ -7,7 +7,8 @@
     "DimensionTypeMixin",
     "EnchantmentItemMixin",
     "EnderPearlItemMixin",
-    "ExampleMixin"
+    "ExampleMixin",
+    "VoidWalkerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
