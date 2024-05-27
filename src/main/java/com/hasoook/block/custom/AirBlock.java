@@ -66,6 +66,7 @@ public class AirBlock extends BlockWithEntity implements BlockEntityProvider {
         return VoxelShapes.empty();
     }
 
+
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
         return null;

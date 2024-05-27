@@ -8,6 +8,7 @@
     "EnchantmentItemMixin",
     "EnderPearlItemMixin",
     "ExampleMixin",
+    "FishingRodItemMixin",
     "VoidWalkerMixin"
   ],
   "injectors": {

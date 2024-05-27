@@ -45,7 +45,7 @@ public abstract class VoidWalkerMixin extends Entity {
 
             // 检查实体脚下10格内的方块是否全部是空气或空气方块
             boolean allAirOrAirBlock = true;
-            for (int i = 0; i < 10 && allAirOrAirBlock; i++) {
+            for (int i = 0; i < 8 && allAirOrAirBlock; i++) {
                 BlockPos checkPos = belowPos.add(0, -i, 0);
                 if (!world.isAir(checkPos) && world.getBlockState(checkPos).getBlock() != ModBlocks.AIRBLOCK) {
                     allAirOrAirBlock = false;

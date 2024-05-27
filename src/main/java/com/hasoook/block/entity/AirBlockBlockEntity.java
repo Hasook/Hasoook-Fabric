@@ -58,7 +58,7 @@ public class AirBlockBlockEntity extends BlockEntity implements ExtendedScreenHa
 
     //空气方块的消失判定
     int disappear = 20; //当这个数字被减完后，方块就消失
-    //如果位置不是客户端 且 随机数<0.5，disappear就减1
+    //如果位置不是客户端 且 随机数<0.8，disappear就减1
     public void tick(World world, BlockPos pos, BlockState state) {
         if (!world.isClient && Math.random() < 0.8) {
             disappear--;
