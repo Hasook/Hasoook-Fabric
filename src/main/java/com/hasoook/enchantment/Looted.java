@@ -6,8 +6,6 @@ import net.minecraft.entity.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.GameRules;
-import net.minecraft.world.World;
 
 public class Looted extends Enchantment {
     protected Looted(Rarity rarity, EnchantmentTarget target, EquipmentSlot[] slotTypes) {
@@ -16,7 +14,7 @@ public class Looted extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if (!user.getWorld().isClient && target instanceof LivingEntity && Math.random() < level * 0.1) {
+        if (!user.getWorld().isClient && target instanceof LivingEntity && Math.random() < 0.05  + level * 0.05) {
             LivingEntity targetEntity = (LivingEntity) target;
             ItemStack mainHandItem = user.getMainHandStack();
             if (!mainHandItem.isEmpty()) {
