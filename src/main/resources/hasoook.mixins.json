@@ -9,7 +9,7 @@
     "EnderPearlItemMixin",
     "ExampleMixin",
     "FishingRodItemMixin",
-    "LivingEntityMixin",
+    "SoulEntanglementMixin",
     "VoidWalkerMixin"
   ],
   "injectors": {
