@@ -26,9 +26,10 @@ public class Hematology extends Enchantment {
         Random random = user.getRandom();
         // 创建消息数组
         String[] messages = {
-                "<name> 你人真好",
-                "<name> 谢谢你啊",
-                "<name> 感动哭了"
+                "你人真好",
+                "谢谢你啊",
+                "你好香啊",
+                "感动哭了"
         };
         // 从消息数组中随机选择一条消息
         String message = messages[random.nextInt(messages.length)];
@@ -45,16 +46,15 @@ public class Hematology extends Enchantment {
                     ((ServerWorld) ((LivingEntity) attacker).getWorld()).spawnParticles(ParticleTypes.HEART, attacker.getX(), attacker.getY() + attacker.getHeight(), attacker.getZ(), 2, 0.4, 0.2, 0.4, 0.1);
 
                 }
-                // 如果被攻击者是玩家，发送消息
+                // 如果穿戴者是玩家，给玩家发送消息
                 if (user instanceof PlayerEntity) {
-                    // 替换消息中的攻击者名称
                     String attackerName = attacker instanceof LivingEntity ? ((LivingEntity) attacker).getDisplayName().getString() : attacker.getType().getName().getString();
-                    String formattedMessage = message.replace("name", attackerName);
-                    ((PlayerEntity) user).sendMessage(Text.of(formattedMessage), false);
+                    ((PlayerEntity) user).sendMessage(Text.of("<" + attackerName + "> " + message), false);
                 }
             }
+
             if (entry != null) {
-                // 对该装备造成伤害，伤害值为2，同时发送装备损坏的状态给用户
+                // 对该装备造成伤害，同时发送装备损坏的状态给用户
                 entry.getValue().damage(1, user, entity -> entity.sendEquipmentBreakStatus((EquipmentSlot) entry.getKey()));
             }
         }
@@ -64,7 +64,10 @@ public class Hematology extends Enchantment {
         return true;
     }
     public int getMinPower(int level) {
-        return level * 5;
+        return 10 + 20 * (level - 1);
+    }
+    public int getMaxPower(int level) {
+        return super.getMinPower(level) + 50;
     }
     public int getMaxLevel() {
         return 3;
