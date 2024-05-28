@@ -11,17 +11,12 @@ public class SoulEntanglement extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return level * 10;
+        return 10 + 20 * (level - 1);
     }
 
     @Override
     public int getMaxPower(int level) {
         return this.getMinPower(level) + 15;
-    }
-
-    @Override
-    public boolean isTreasure() {
-        return true;
     }
 
     public boolean isCursed() {
