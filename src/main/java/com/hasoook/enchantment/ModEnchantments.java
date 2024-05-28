@@ -10,14 +10,16 @@ import net.minecraft.util.Identifier;
 
 public class ModEnchantments {
 
-    public static Enchantment Blast = register("blast", //爆炸
-            new Blast(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment Blunt = register("blunt", //磨钝
             new Blunt(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment Looted = register("looted", //被抢
             new Looted(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment SoulEntanglement = register("soul_entanglement", //灵魂纠缠
             new SoulEntanglement(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.ARMOR_FEET, new EquipmentSlot[]{EquipmentSlot.FEET}));
+    public static Enchantment Hematology = register("hematology", //血包
+            new Hematology(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.ARMOR, new EquipmentSlot[]{EquipmentSlot.CHEST}));
+    public static Enchantment Blast = register("blast", //爆炸
+            new Blast(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment FrostThorns = register("frost_thorns", //冰霜荆棘
             new FrostThorns(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.ARMOR, new EquipmentSlot[]{EquipmentSlot.CHEST}));
     public static Enchantment Thunder = register("thunder", //落雷
