@@ -8,10 +8,10 @@
 		"Hasoook"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://space.bilibili.com/38047059",
+		"sources": "https://github.com/Hasook/Hasoook-Fabric"
 	},
-	"license": "CC BY-NC",
+	"license": "CC BY-NC 4.0",
 	"icon": "assets/hasoook/icon.png",
 	"environment": "*",
 	"entrypoints": {
