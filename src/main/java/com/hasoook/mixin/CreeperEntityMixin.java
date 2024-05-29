@@ -23,7 +23,7 @@ public abstract class CreeperEntityMixin extends Entity {
 
     @Inject(method = "explode" , at = @At("HEAD"), cancellable = true)
     public void mixinExplode(CallbackInfo ci) {
-        //如果执行位置不是客户端 并且 所在世界维度是地狱
+        //如果执行位置是服务端 并且 所在世界维度是地狱
         if (!this.getWorld().isClient && this.getWorld().getRegistryKey().equals(World.NETHER)) {
             //阻止这个事件的发生
             ci.cancel();
