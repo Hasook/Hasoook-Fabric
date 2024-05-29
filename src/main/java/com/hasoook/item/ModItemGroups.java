@@ -13,15 +13,13 @@ import net.minecraft.util.Identifier;
 
 //模组创造物品选项卡
 public class ModItemGroups {
-    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Hasoook.MOD_ID, "ruby"),
+    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Hasoook.MOD_ID, "air_block"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.hasoook"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY); //模组物品
                         entries.add(Items.SUGAR); //原版物品
                         entries.add(ModBlocks.RUBY_BLOCK); //模组方块
-                        entries.add(ModBlocks.AIRBLOCK); //模组方块
-
-
+                        entries.add(ModBlocks.AIRBLOCK);
                     }).build());
 
     public static void registerItemGroup() {
