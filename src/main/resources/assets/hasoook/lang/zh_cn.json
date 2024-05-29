@@ -12,13 +12,16 @@
   "enchantment.hasoook.soul_entanglement": "灵魂纠缠",
   "enchantment.hasoook.hematology": "血包",
 
-  "enchantment.hasoook.blunt.desc": "减少物品的伤害.",
+  "comment": "附魔描述",
+  "enchantment.hasoook.blast.desc": "攻击会在目标位置产生爆炸.",
+  "enchantment.hasoook.blunt.desc": "减少物品的近战攻击伤害.",
+  "enchantment.hasoook.thunder.desc": "攻击时召唤闪电.",
   "enchantment.hasoook.void_walker.desc": "可以在空中行走.",
   "enchantment.hasoook.breath_looting.desc": "攻击会抢夺目标的氧气.",
   "enchantment.hasoook.frost_thorns.desc": "对攻击者造成附带冰霜的反弹伤害.",
   "enchantment.hasoook.looted.desc": "造成伤害时物品有概率被抢走.",
   "enchantment.hasoook.soul_entanglement.desc": "降低在灵魂沙和灵魂土上的移动速度，且可能会被尖牙攻击.",
-  "enchantment.hasoook.hematology.desc": "被攻击时可能会给对方恢复生命值.",
+  "enchantment.hasoook.hematology.desc": "被攻击时可能会为对方恢复生命值.",
 
   "block.hasoook.ruby_block": "红宝石块",
   "block.hasoook.air_block": "§e空气方块",

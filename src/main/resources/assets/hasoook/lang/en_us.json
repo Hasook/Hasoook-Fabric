@@ -13,7 +13,10 @@
   "enchantment.hasoook.soul_entanglement": "Soul Entanglement",
   "enchantment.hasoook.hematology": "Hematology",
 
-  "enchantment.hasoook.blunt.desc": "Reduce damage to items.",
+  "comment": "Enchantment Descriptions",
+  "enchantment.hasoook.blast.desc": "Attacks will generate an explosion at the target location.",
+  "enchantment.hasoook.blunt.desc": "Reduce melee attack damage of items.",
+  "enchantment.hasoook.thunder.desc": "Summon lightning upon attack.",
   "enchantment.hasoook.void_walker.desc": "Can walk in the air",
   "enchantment.hasoook.breath_looting.desc": "Attacks will deplete the target's oxygen.",
   "enchantment.hasoook.frost_thorns.desc": "To inflict retaliatory damage with frost on the attacker.",
