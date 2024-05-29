@@ -35,7 +35,7 @@ public class FrostThorns extends Enchantment {
         return level * 5;
     }
     public int getMaxLevel() {
-        return 2;
+        return 3;
     }  //最大等级
 
 }
