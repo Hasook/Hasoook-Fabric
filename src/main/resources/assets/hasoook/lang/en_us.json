@@ -13,6 +13,14 @@
   "enchantment.hasoook.soul_entanglement": "Soul Entanglement",
   "enchantment.hasoook.hematology": "Hematology",
 
+  "enchantment.hasoook.blunt.desc": "Reduce damage to items, with higher levels reducing more.",
+  "enchantment.hasoook.void_walker.desc": "Can walk in the air",
+  "enchantment.hasoook.breath_looting.desc": "Attacks will deplete the target's oxygen.",
+  "enchantment.hasoook.frost_thorns.desc": "To inflict retaliatory damage with frost on the attacker.",
+  "enchantment.hasoook.looted.desc": "When attacking, there is a chance that items will be stolen.",
+  "enchantment.hasoook.soul_entanglement.desc": "Lower movement speed on soul sand and soul soil, and may attract Evoker Fang attacks.",
+  "enchantment.hasoook.hematology.desc": "When attacked, there's a possibility of restoring health to the attack.",
+
   "block.hasoook.ruby_block": "Ruby Block",
   "block.hasoook.air_block": "§eAir Block",
 
