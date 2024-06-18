@@ -12,6 +12,7 @@
   "enchantment.hasoook.looted": "Looted",
   "enchantment.hasoook.soul_entanglement": "Soul Entanglement",
   "enchantment.hasoook.hematology": "Hematology",
+  "enchantment.hasoook.let_you_fly": "Let You Fly",
 
   "comment": "Enchantment Descriptions",
   "enchantment.hasoook.blast.desc": "Attacks will generate an explosion at the target location.",
@@ -23,9 +24,12 @@
   "enchantment.hasoook.looted.desc": "When attacking, there is a chance that items will be stolen.",
   "enchantment.hasoook.soul_entanglement.desc": "Lower movement speed on soul sand and soul soil, and may attract Evoker Fang attacks.",
   "enchantment.hasoook.hematology.desc": "When attacked, there's a possibility of restoring health to the attack.",
+  "enchantment.hasoook.let_you_fly.desc": "Knock the pretentious goals out of the sky.",
 
   "block.hasoook.ruby_block": "Ruby Block",
   "block.hasoook.air_block": "§eAir Block",
+
+  "effect.hasoook.pretentiousness": "Pretentiousness",
 
   "itemgroup.hasoook": "Hasoook"
 }
