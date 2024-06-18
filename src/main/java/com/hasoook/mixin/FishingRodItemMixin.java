@@ -1,17 +1,23 @@
 package com.hasoook.mixin;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.tag.FluidTags;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
@@ -27,6 +33,7 @@ public abstract class FishingRodItemMixin extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
         if (user.fishHook != null) {
+
             // 获取鱼钩的位置
             Vec3d bobberPos = user.fishHook.getPos();
             // 鱼钩是否在地上

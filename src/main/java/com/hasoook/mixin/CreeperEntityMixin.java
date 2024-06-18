@@ -31,7 +31,7 @@ public abstract class CreeperEntityMixin extends Entity {
             this.discard();
             //将当前世界中生物对方块破坏的规则值存储在名为bl变量中
             boolean bl = getWorld().getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING);
-            //在苦力怕位置生成一个爆炸
+            //在苦力怕位置生成一个带火焰的爆炸
             getWorld().createExplosion(this, getX(), getY(), getZ(), 3F, bl, World.ExplosionSourceType.MOB);
         }
 

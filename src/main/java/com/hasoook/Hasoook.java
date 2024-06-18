@@ -2,6 +2,7 @@ package com.hasoook;
 
 import com.hasoook.block.ModBlocks;
 import com.hasoook.block.entity.ModBlockEntities;
+import com.hasoook.effect.ModStatusEffects;
 import com.hasoook.enchantment.ModEnchantments;
 import com.hasoook.item.ModItemGroups;
 import com.hasoook.item.ModItems;
@@ -20,6 +21,6 @@ public class Hasoook implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntities();
 		ModEnchantments.registerModEnchantments();
-
+		ModStatusEffects.registerModEffect();
 	}
 }

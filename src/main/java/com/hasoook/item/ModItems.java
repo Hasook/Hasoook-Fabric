@@ -19,7 +19,6 @@ public class ModItems {
         entries.add(RUBY);
     }
 
-
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(Hasoook.MOD_ID, name), item);
     }
