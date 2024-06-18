@@ -30,6 +30,8 @@ public class ModEnchantments {
             new VoidWalker(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR_FEET, new EquipmentSlot[]{EquipmentSlot.FEET}));
     public static Enchantment BreathLooting = register("breath_looting", //呼吸抢夺
             new BreathLooting(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+    public static Enchantment LetYouFly = register("let_you_fly", //让你飞起来
+            new LetYouFly(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
 
 
     private static Enchantment register(String name, Enchantment enchantment) {
