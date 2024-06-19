@@ -1,6 +1,13 @@
 {
   "item.hasoook.ruby": "Ruby",
 
+  "item.minecraft.potion.effect.pretentiousness_potion": "Pretentiousness Potion",
+  "item.minecraft.splash_potion.effect.pretentiousness_potion": "Splash Potion of Pretentiousness",
+  "item.minecraft.lingering_potion.effect.pretentiousness_potion": "Lingering Potion of Pretentiousness",
+  "item.minecraft.tipped_arrow.effect.pretentiousness_potion": "Arrow of Pretentiousness",
+
+  "effect.hasoook.pretentiousness": "Pretentiousness",
+
   "enchantment.hasoook.blast": "Blast",
   "enchantment.hasoook.blunt": "Blunt",
   "enchantment.hasoook.thunder": "Thunder",
@@ -28,8 +35,6 @@
 
   "block.hasoook.ruby_block": "Ruby Block",
   "block.hasoook.air_block": "§eAir Block",
-
-  "effect.hasoook.pretentiousness": "Pretentiousness",
 
   "itemgroup.hasoook": "Hasoook"
 }

@@ -1,6 +1,13 @@
 {
   "item.hasoook.ruby": "红宝石",
 
+  "item.minecraft.potion.effect.pretentiousness_potion": "装逼药水",
+  "item.minecraft.splash_potion.effect.pretentiousness_potion": "喷溅型装逼药水",
+  "item.minecraft.lingering_potion.effect.pretentiousness_potion": "滞留型装逼药水",
+  "item.minecraft.tipped_arrow.effect.pretentiousness_potion": "装逼之箭",
+
+  "effect.hasoook.pretentiousness": "装逼",
+
   "enchantment.hasoook.blast": "爆炸",
   "enchantment.hasoook.blunt": "磨钝",
   "enchantment.hasoook.thunder": "落雷",
@@ -27,8 +34,6 @@
 
   "block.hasoook.ruby_block": "红宝石块",
   "block.hasoook.air_block": "§e空气方块",
-
-  "effect.hasoook.pretentiousness": "装逼",
 
   "itemgroup.hasoook": "Hasoook"
 }
