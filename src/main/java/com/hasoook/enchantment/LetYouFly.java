@@ -14,12 +14,10 @@ public class LetYouFly extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if (target instanceof LivingEntity livingTarget) {
-            //如果目标有装逼效果
-            if (livingTarget.hasStatusEffect(ModStatusEffects.PRETENTIOUSNESS)) {
-                // 就让目标飞起来
-                livingTarget.setVelocity(0, 0.4 * level, 0);
-            }
+        // 如果目标是有装逼效果
+        if (target instanceof LivingEntity livingTarget && livingTarget.hasStatusEffect(ModStatusEffects.PRETENTIOUSNESS)) {
+            // 我让你飞起来！
+            livingTarget.setVelocity(0, 0.1 + 0.4 * level, 0);
         }
     }
 
