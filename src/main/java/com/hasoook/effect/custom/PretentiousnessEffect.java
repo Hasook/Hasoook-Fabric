@@ -23,7 +23,7 @@ public class PretentiousnessEffect extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (!entity.getWorld().isClient) {
             // 创建一个抗性提升效果
-            StatusEffectInstance resistanceEffect = new StatusEffectInstance(StatusEffects.RESISTANCE, 30, 0, false, false);
+            StatusEffectInstance resistanceEffect = new StatusEffectInstance(StatusEffects.RESISTANCE, 10, 0, false, false);
             // 添加效果到实体
             entity.addStatusEffect(resistanceEffect);
         }
