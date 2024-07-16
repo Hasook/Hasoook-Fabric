@@ -63,11 +63,11 @@ public class CattivaEntity extends AnimalEntity implements GeoEntity {
         if(tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.walk", Animation.LoopType.LOOP));
             //行走动画
+        } else {
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.normal", Animation.LoopType.LOOP));
+            //空闲动画
         }
 
-
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.normal", Animation.LoopType.LOOP));
-        //空闲动画
         return PlayState.CONTINUE;
     }
 
