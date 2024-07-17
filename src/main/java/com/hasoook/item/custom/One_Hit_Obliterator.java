@@ -16,7 +16,7 @@ import java.util.List;
 
 public class One_Hit_Obliterator extends Item {
     public One_Hit_Obliterator(Settings settings) {
-        super(settings.maxCount(1).rarity(Rarity.EPIC)); // 设置物品堆叠上限为1
+        super(settings.maxCount(1).rarity(Rarity.EPIC).maxDamage(100)); // 设置物品堆叠上限为1
     }
 
     @Override
