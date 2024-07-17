@@ -2,6 +2,7 @@ package com.hasoook.item;
 
 import com.hasoook.Hasoook;
 import com.hasoook.eitity.ModEntities;
+import com.hasoook.item.custom.One_Hit_Obliterator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -15,6 +16,8 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     //注册物品
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings())); //红宝石
+
+    public static final Item ONE_HIT_OBLITERATOR = registerItem("one_hit_obliterator", new One_Hit_Obliterator(new FabricItemSettings())); //红宝石
 
     public static final Item CATTIVA_SPAWN_EGG = registerItem("cattiva_spawn_egg",
             new SpawnEggItem(ModEntities.CATTIVA, 0xffc5c9, 0x976069,

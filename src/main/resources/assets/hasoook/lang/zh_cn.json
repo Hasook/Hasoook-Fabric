@@ -1,11 +1,16 @@
 {
   "item.hasoook.ruby": "红宝石",
+  "item.hasoook.one_hit_obliterator": "必杀之剑",
   "item.hasoook.cattiva_spawn_egg": "捣蛋猫刷怪蛋",
 
   "item.minecraft.potion.effect.pretentiousness_potion": "装逼药水",
   "item.minecraft.splash_potion.effect.pretentiousness_potion": "喷溅型装逼药水",
   "item.minecraft.lingering_potion.effect.pretentiousness_potion": "滞留型装逼药水",
   "item.minecraft.tipped_arrow.effect.pretentiousness_potion": "装逼之箭",
+
+  "item.hasoook.one_hit_obliterator.tooltip1": "在主手时：",
+  "item.hasoook.one_hit_obliterator.tooltip2": "∞ 攻击伤害",
+  "item.hasoook.one_hit_obliterator.tooltip3": "∞ 受到伤害",
 
   "effect.hasoook.pretentiousness": "装逼",
 

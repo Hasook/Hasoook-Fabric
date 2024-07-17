@@ -10,6 +10,7 @@
     "EnderPearlItemMixin",
     "ExampleMixin",
     "FishingRodItemMixin",
+    "OneHitObliteratorMixin",
     "SoulEntanglementMixin",
     "VoidWalkerMixin"
   ],
