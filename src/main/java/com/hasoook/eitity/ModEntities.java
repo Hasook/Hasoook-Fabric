@@ -14,5 +14,5 @@ public class ModEntities {
     public static final EntityType<CattivaEntity> CATTIVA = Registry.register(
             Registries.ENTITY_TYPE, new Identifier(Hasoook.MOD_ID, "cattiva"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CattivaEntity::new)
-                    .dimensions(EntityDimensions.fixed(1.5f, 1.75f)).build());
+                    .dimensions(EntityDimensions.fixed(0.8f, 1.2f)).build());
 }
