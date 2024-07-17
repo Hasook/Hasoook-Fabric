@@ -16,7 +16,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import java.util.List;
-import java.util.Map;
 
 public class One_Hit_Obliterator extends Item {
     public One_Hit_Obliterator(Settings settings) {
