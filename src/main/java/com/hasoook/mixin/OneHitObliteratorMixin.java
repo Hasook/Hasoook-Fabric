@@ -1,29 +1,37 @@
 package com.hasoook.mixin;
 
-import com.hasoook.item.custom.One_Hit_Obliterator;
+import com.hasoook.item.ModItems;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LivingEntity.class)
-public class OneHitObliteratorMixin {
+public abstract class OneHitObliteratorMixin extends Entity {
 
-    @Inject(method = "damage", at = @At("HEAD"), cancellable = true)
-    private void onDamage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> info) {
-        // 检查受伤的实体是否为 LivingEntity
-        LivingEntity injuredEntity = (LivingEntity)(Object)this;
+    @Shadow public abstract void setHealth(float health);
 
-        // 检查受伤的实体是否手持钻石剑
-        ItemStack heldItem = injuredEntity.getMainHandStack();
-        if (heldItem.getItem() == Items.DIAMOND_SWORD) {
-            // 如果受伤的实体手持钻石剑，则杀死该实体
-            injuredEntity.kill();
-            info.setReturnValue(true); // 取消原始方法的执行
+    @Shadow public abstract ItemStack getMainHandStack();
+
+    @Shadow public abstract void onDeath(DamageSource damageSource);
+
+    public OneHitObliteratorMixin(EntityType<?> type, World world) {
+        super(type, world);
+    }
+
+    @Inject(method = "damage", at = @At("HEAD"))
+    private void onDamage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> ci) {
+        if (!this.getWorld().isClient && this.getMainHandStack().getItem() == ModItems.ONE_HIT_OBLITERATOR && this.isAlive() && amount > 0.0f) {
+            this.setHealth(0);
+            this.onDeath(source);
         }
     }
+
 }
