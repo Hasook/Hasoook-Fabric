@@ -23,9 +23,9 @@ public class CopyEnchantmentBook extends SpecialCraftingRecipe {
 
     @Override
     public boolean matches(RecipeInputInventory inventory, World world) {
-        int count = 0;
-        int count2 = 0;
-        int count3 = 0;
+        int count = 0; // 记录书与笔的数量
+        int count2 = 0; // 记录附魔书的数量
+        int count3 = 0; // 记录两者之外物品的数量
         for (int i = 0; i < inventory.size(); ++i) {
             ItemStack stack = inventory.getStack(i);
             if (!stack.isEmpty()) {
@@ -41,9 +41,9 @@ public class CopyEnchantmentBook extends SpecialCraftingRecipe {
 
     @Override
     public ItemStack craft(RecipeInputInventory inventory, DynamicRegistryManager registryManager) {
-        int count = 0;
-        int count2 = 0;
-        int count3 = 0;
+        int count = 0; // 记录书与笔的数量
+        int count2 = 0; // 记录附魔书的数量
+        int count3 = 0; // 记录两者之外物品的数量
         for (int i = 0; i < inventory.size(); ++i) {
             ItemStack stack = inventory.getStack(i);
             if (!stack.isEmpty()) {
@@ -61,9 +61,9 @@ public class CopyEnchantmentBook extends SpecialCraftingRecipe {
             ItemStack stack = inventory.getStack(itemSlot);
             Item item = inventory.getStack(itemSlot).getItem();
             if (stack.hasNbt()) {
-                NbtCompound nbt = stack.getNbt();
-                ItemStack stack2 = new ItemStack(item,count + 1);
-                stack2.setNbt(nbt);
+                NbtCompound nbt = stack.getNbt(); // 保存附魔书的nbt
+                ItemStack stack2 = new ItemStack(item,count + 1); // 设置一个新物品，数量为书与笔的数量+1
+                stack2.setNbt(nbt); //给新物品设置nbt
                 return stack2;
             }
             return new ItemStack(item,count + 1);
