@@ -18,6 +18,12 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class One_Hit_Obliterator extends Item {
+
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return true;
+    }
+
     public One_Hit_Obliterator(Settings settings) {
         super(settings.maxCount(1).rarity(Rarity.EPIC).maxDamage(100)); // 堆叠上限为1 伤害100
     }
