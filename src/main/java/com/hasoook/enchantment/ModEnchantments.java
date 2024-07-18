@@ -32,8 +32,9 @@ public class ModEnchantments {
             new BreathLooting(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment LetYouFly = register("let_you_fly", //让你飞起来
             new LetYouFly(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
-    public static Enchantment FromTheNether = register("from_the_nether", //来自地狱
-            new FromTheNether(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.VANISHABLE, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+    public static Enchantment Transcription = register("transcription", //抄写
+            new Normal(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+
 
 
     private static Enchantment register(String name, Enchantment enchantment) {
