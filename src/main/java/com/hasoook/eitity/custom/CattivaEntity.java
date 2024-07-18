@@ -71,7 +71,7 @@ public class CattivaEntity extends TameableEntity implements GeoEntity {
         // 设置目标选择器
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ChickenEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
-        this.targetSelector.add(1, new AnimalMateGoal(this, 1.0f));
+        this.targetSelector.add(1, new AnimalMateGoal(this, 0.8f));
     }
 
     public ActionResult interactMob(PlayerEntity player, Hand hand) {
@@ -177,21 +177,17 @@ public class CattivaEntity extends TameableEntity implements GeoEntity {
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
         if(tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.walk", Animation.LoopType.LOOP));
-            //行走动画
+            // 行走动画
         }else if (this.isSitting()){
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.mining", Animation.LoopType.LOOP));
+            // 坐下动画
             return PlayState.CONTINUE;
         }else {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.normal", Animation.LoopType.LOOP));
-            //空闲动画
+            // 空闲动画
         }
 
         return PlayState.CONTINUE;
-    }
-
-    @FunctionalInterface
-    public interface ParticleKeyframeHandler<A extends GeoAnimatable> {
-        void handle(ParticleKeyframeEvent<A> event);
     }
 
     @Override
