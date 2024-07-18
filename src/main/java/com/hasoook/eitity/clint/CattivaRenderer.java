@@ -25,7 +25,6 @@ public class CattivaRenderer extends GeoEntityRenderer<CattivaEntity> {
         if(entity.isBaby()) {
             poseStack.scale(0.6f, 0.6f, 0.6f);
         }
-
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
     }
 
