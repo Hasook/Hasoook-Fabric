@@ -11,6 +11,7 @@ import com.hasoook.item.ModItemGroups;
 import com.hasoook.item.ModItems;
 import com.hasoook.potions.ModPotions;
 import com.hasoook.recipes.CopyEnchantmentBook;
+import com.hasoook.recipes.WrittenBookPage;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -24,6 +25,7 @@ public class Hasoook implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static final RecipeSerializer<CopyEnchantmentBook> COPY_ENCHANTMENT_BOOK = RecipeSerializer.register("copy_enchantment_book", new SpecialRecipeSerializer<>(CopyEnchantmentBook::new));
+	public static final RecipeSerializer<WrittenBookPage> WRITTEN_BOOK_PAGE = RecipeSerializer.register("written_book_page", new SpecialRecipeSerializer<>(WrittenBookPage::new));
 
 	@Override
 	public void onInitialize() {
