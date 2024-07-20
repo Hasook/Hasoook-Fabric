@@ -53,18 +53,18 @@ public class CattivaEntity extends TameableEntity implements GeoEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this)); //游泳
-        this.goalSelector.add(1, new EscapeDangerGoal(this, 1.2)); // 受伤后逃跑
+        this.goalSelector.add(1, new EscapeDangerGoal(this, 1.0)); // 受伤后逃跑
         this.goalSelector.add(1, new SitGoal(this)); //可以坐下
         this.goalSelector.add(1, new AnimalMateGoal(this, 0.8));  // 交配
         this.goalSelector.add(2, new TemptGoal(this, 1.0, Ingredient.ofItems(Items.TROPICAL_FISH, Items.COOKED_COD, Items.COOKED_SALMON), false)); // 诱惑
-        this.goalSelector.add(2, new FleeEntityGoal<>(this, PlayerEntity.class, 8.0f, 1.0, 1.2, EntityPredicates.EXCEPT_CREATIVE_OR_SPECTATOR::test)); //逃离玩家
+        this.goalSelector.add(2, new FleeEntityGoal<>(this, PlayerEntity.class, 8.0f, 1.0, 1.0, EntityPredicates.EXCEPT_CREATIVE_OR_SPECTATOR::test)); //逃离玩家
         this.goalSelector.add(3, new FollowOwnerGoal(this, 1.0, 10.0F, 5.0F, false));  // 添加跟随主人目标
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1)); //游荡
         this.goalSelector.add(4, new FollowParentGoal(this, 1));  // 跟随父母目标
-        this.goalSelector.add(4, new LookAroundGoal(this)); //环顾四周
-        this.goalSelector.add(8, new PounceAtTargetGoal(this, 0.4F));  // 向目标跳扑攻击
-        this.goalSelector.add(9, new AttackGoal(this));  // 攻击目标
-        this.goalSelector.add(12, new LookAtEntityGoal(this, PlayerEntity.class, 10.0F));  // 添加看向玩家目标
+        this.goalSelector.add(5, new PounceAtTargetGoal(this, 0.4F));  // 向目标跳扑攻击
+        this.goalSelector.add(6, new AttackGoal(this));  // 攻击目标
+        this.goalSelector.add(7, new LookAroundGoal(this)); //环顾四周
+        this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 10.0F));  // 添加看向玩家目标
 
         // 设置目标选择器
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, ChickenEntity.class, true));
