@@ -29,8 +29,8 @@ public abstract class OneHitObliteratorMixin extends Entity {
     @Inject(method = "damage", at = @At("HEAD"))
     private void onDamage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> ci) {
         if (!this.getWorld().isClient && this.getMainHandStack().getItem() == ModItems.ONE_HIT_OBLITERATOR && this.isAlive() && amount > 0.0f) {
-            this.setHealth(0);
-            this.onDeath(source);
+            this.setHealth(0); // 把生命值设置为0
+            this.onDeath(source); // 调用死亡逻辑（不然死亡后没有掉落物）
         }
     }
 
