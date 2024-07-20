@@ -21,7 +21,7 @@ public class One_Hit_Obliterator extends Item {
 
     @Override
     public boolean hasGlint(ItemStack stack) {
-        return true;
+        return true; // 附魔光效
     }
 
     public One_Hit_Obliterator(Settings settings) {
@@ -30,7 +30,7 @@ public class One_Hit_Obliterator extends Item {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.kill(); // 使用 kill 方法直接杀死目标生物
+        target.kill(); // 使用kill杀死目标
         return super.postHit(stack, target, attacker);
     }
 
@@ -40,12 +40,12 @@ public class One_Hit_Obliterator extends Item {
         tooltip.add(Text.translatable("item.hasoook.one_hit_obliterator.tooltip1").formatted(Formatting.GRAY));
         tooltip.add(Text.translatable("item.hasoook.one_hit_obliterator.tooltip2").formatted(Formatting.DARK_GREEN));
         tooltip.add(Text.translatable("item.hasoook.one_hit_obliterator.tooltip3").formatted(Formatting.DARK_GREEN));
+        // 模仿游戏原版中工具的属性的描述
     }
 
     @Override
     public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
-        // 在创造模式下，不允许这个武器破坏方块
-        return false;
+        return false; // 在创造模式下，不允许这个武器破坏方块（模仿剑一样的效果）
     }
 
 }
