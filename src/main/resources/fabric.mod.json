@@ -3,7 +3,7 @@
 	"id": "hasoook",
 	"version": "${version}",
 	"name": "Hasoook",
-	"description": "This is my learning mod :)",
+	"description": "这是我学习Fabric模组开发的模组，会做一些好玩的内容！",
 	"authors": [
 		"Hasoook"
 	],
