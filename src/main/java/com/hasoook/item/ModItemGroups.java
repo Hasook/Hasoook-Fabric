@@ -15,7 +15,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Hasoook.MOD_ID, "air_block"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.hasoook"))
-                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.AIRBLOCK)).entries((displayContext, entries) -> {
                         entries.add(Items.SUGAR); //  原版物品
                         entries.add(ModItems.RUBY); //  模组物品
                         entries.add(ModItems.ONE_HIT_OBLITERATOR);
