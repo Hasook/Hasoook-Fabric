@@ -36,6 +36,7 @@ public class Hasoook implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 		ModStatusEffects.registerModEffect();
 		ModPotions.registerPotions();
+		Trades.addTrade();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CATTIVA, CattivaEntity.setAttributes());
 
