@@ -12,6 +12,8 @@ import com.hasoook.item.ModItems;
 import com.hasoook.potions.ModPotions;
 import com.hasoook.recipes.CopyEnchantmentBook;
 import com.hasoook.recipes.WrittenBookPage;
+import com.hasoook.util.ModCustomTrades;
+import com.hasoook.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -36,7 +38,8 @@ public class Hasoook implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 		ModStatusEffects.registerModEffect();
 		ModPotions.registerPotions();
-		Trades.addTrade();
+		ModCustomTrades.addTrade();
+		ModLootTableModifiers.modifyLootTables();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CATTIVA, CattivaEntity.setAttributes());
 

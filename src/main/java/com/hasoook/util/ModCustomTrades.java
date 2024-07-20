@@ -1,6 +1,5 @@
-package com.hasoook;
+package com.hasoook.util;
 
-import com.hasoook.commands.NbtCommand;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -9,7 +8,7 @@ import net.minecraft.nbt.NbtList;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 
-public class Trades {
+public class ModCustomTrades {
 
     public static void addTrade() {
         sellSilkBag();
