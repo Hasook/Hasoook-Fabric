@@ -12,9 +12,9 @@ public class EnchantmentItemMixin {
      * @reason
      *
      */
-    @Overwrite
+    /*@Overwrite
     public boolean isAcceptableItem(ItemStack stack) {
         return true;
-    }
+    }*/
 
 }
