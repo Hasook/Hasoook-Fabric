@@ -11,6 +11,7 @@
     "ExampleMixin",
     "FishingRodItemMixin",
     "OneHitObliteratorMixin",
+    "PlayerEntityMixin",
     "SoulEntanglementMixin",
     "VoidWalkerMixin"
   ],
