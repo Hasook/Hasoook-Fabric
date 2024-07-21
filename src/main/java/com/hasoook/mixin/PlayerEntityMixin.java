@@ -10,6 +10,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
@@ -67,6 +69,7 @@ public abstract class PlayerEntityMixin extends Entity {
                     trident.getOwner() == this && EnchantmentHelper.getLevel(ModEnchantments.Hiraishin, trident.getItemStack()) > 0
             ).stream().findFirst().ifPresent(trident -> {
                 teleport(trident.getX(), trident.getY(), trident.getZ());
+                world.playSound(null, trident.getX(), trident.getY(), trident.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 1.0f, 1.0f);
             });
         }
     }
