@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:writable_book",
+          "name": "minecraft:enchanted_book",
           "functions": [
             {
               "function": "minecraft:set_enchantments",
