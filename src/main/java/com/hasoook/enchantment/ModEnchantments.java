@@ -34,6 +34,8 @@ public class ModEnchantments {
             new LetYouFly(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment Transcription = register("transcription", //抄写
             new Transcription(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+    public static Enchantment Hiraishin = register("hiraishin", //飞雷神
+            new Hiraishin(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
 
 
 
