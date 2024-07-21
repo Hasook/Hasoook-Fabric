@@ -24,7 +24,7 @@
   "enchantment.hasoook.looted": "被抢",
   "enchantment.hasoook.soul_entanglement": "灵魂纠缠",
   "enchantment.hasoook.hematology": "血包",
-  "enchantment.hasoook.let_you_fly": "让你飞起来",
+  "enchantment.hasoook.let_you_fly": "来让你飞起",
   "enchantment.hasoook.transcription": "抄写",
 
   "comment": "附魔描述",
@@ -37,8 +37,8 @@
   "enchantment.hasoook.looted.desc": "造成伤害时物品有概率被抢走.",
   "enchantment.hasoook.soul_entanglement.desc": "降低在灵魂沙和灵魂土上的移动速度，且可能会被尖牙攻击.",
   "enchantment.hasoook.hematology.desc": "被攻击时可能会为对方恢复生命值.",
-  "enchantment.hasoook.let_you_fly.desc": "把装逼的目标击飞",
-  "enchantment.hasoook.transcription.desc": "与附魔书合成，抄写附魔书里的内容",
+  "enchantment.hasoook.let_you_fly.desc": "把装逼的目标击飞.",
+  "enchantment.hasoook.transcription.desc": "与附魔书合成，抄写附魔书里的内容.",
 
   "block.hasoook.ruby_block": "红宝石块",
   "block.hasoook.air_block": "空气方块",
