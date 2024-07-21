@@ -33,7 +33,7 @@ public class ModEnchantments {
     public static Enchantment LetYouFly = register("let_you_fly", //让你飞起来
             new LetYouFly(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     public static Enchantment Transcription = register("transcription", //抄写
-            new Normal(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+            new Transcription(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
 
 
 
