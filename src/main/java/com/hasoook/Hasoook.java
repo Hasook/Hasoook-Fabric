@@ -6,7 +6,6 @@ import com.hasoook.effect.ModStatusEffects;
 import com.hasoook.eitity.ModEntities;
 import com.hasoook.eitity.custom.CattivaEntity;
 import com.hasoook.enchantment.ModEnchantments;
-import com.hasoook.event.UseEntityHandler;
 import com.hasoook.item.ModItemGroups;
 import com.hasoook.item.ModItems;
 import com.hasoook.potions.ModPotions;
@@ -40,7 +39,5 @@ public class Hasoook implements ModInitializer {
 		ModCustomTrades.addTrade();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CATTIVA, CattivaEntity.setAttributes());
-
-		UseEntityCallback.EVENT.register(new UseEntityHandler());
 	}
 }
