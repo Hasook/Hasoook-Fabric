@@ -7,24 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "weight": 60,
-          "functions": [
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "hasoook:transcription": 1
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 8
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
+          "name": "minecraft:enchanted_book",
           "weight": 60,
           "functions": [
             {
