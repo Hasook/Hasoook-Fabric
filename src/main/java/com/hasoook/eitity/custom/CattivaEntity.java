@@ -67,8 +67,9 @@ public class CattivaEntity extends TameableEntity implements GeoEntity {
         this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 10.0F));  // 添加看向玩家目标
 
         // 设置目标选择器
-        this.targetSelector.add(0, new ActiveTargetGoal<>(this, ChickenEntity.class, true));
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, ChickenEntity.class, true));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, FishEntity.class, true));
         this.targetSelector.add(1, new AnimalMateGoal(this, 0.8f));
     }
 
