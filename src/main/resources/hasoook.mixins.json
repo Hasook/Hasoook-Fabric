@@ -13,6 +13,7 @@
     "OneHitObliteratorMixin",
     "PlayerEntityMixin",
     "SoulEntanglementMixin",
+    "TridentEntityMixin",
     "VoidWalkerMixin"
   ],
   "injectors": {
