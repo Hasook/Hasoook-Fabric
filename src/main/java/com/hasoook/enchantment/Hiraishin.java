@@ -25,6 +25,10 @@ public class Hiraishin extends Enchantment {
         // 只有三叉戟可以附魔
     }
 
+    public int getMaxLevel() {
+        return 3;
+    }
+
     public boolean canAccept(Enchantment other) {
         return super.canAccept(other) && other != Enchantments.LOYALTY && other != Enchantments.CHANNELING && other != Enchantments.RIPTIDE;
         // 与忠诚、引雷、激流不兼容
