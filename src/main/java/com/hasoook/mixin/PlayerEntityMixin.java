@@ -57,22 +57,5 @@ public abstract class PlayerEntityMixin extends Entity {
         }
     }
 
-    @Inject(method = "tick", at = @At("HEAD"))
-    private void onTick(CallbackInfo ci) {
-        // 飞雷神三叉戟
-        if (isSneaking() && !getWorld().isClient) {
-            World world = getEntityWorld();
-            double range = 32.0; //寻找三叉戟的范围
-            BlockPos pos = getBlockPos();
-
-            world.getEntitiesByClass(TridentEntity.class, new Box(pos).expand(range), trident ->
-                    trident.getOwner() == this && EnchantmentHelper.getLevel(ModEnchantments.Hiraishin, trident.getItemStack()) > 0
-            ).stream().findFirst().ifPresent(trident -> {
-                teleport(trident.getX(), trident.getY(), trident.getZ());
-                world.playSound(null, trident.getX(), trident.getY(), trident.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 1.0f, 1.0f);
-            });
-        }
-    }
-
 }
 
