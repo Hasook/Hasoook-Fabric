@@ -10,6 +10,8 @@
     "EnderPearlItemMixin",
     "ExampleMixin",
     "FishingRodItemMixin",
+    "LureItemBobberMixin",
+    "LureItemMixin",
     "OneHitObliteratorMixin",
     "PlayerEntityMixin",
     "SoulEntanglementMixin",
@@ -18,5 +20,8 @@
   ],
   "injectors": {
     "defaultRequire": 1
-	}
+  },
+  "client": [
+    "LureItemBobberRendererMixin"
+  ]
 }
