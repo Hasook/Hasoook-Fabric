@@ -10,6 +10,7 @@ import com.hasoook.item.ModItemGroups;
 import com.hasoook.item.ModItems;
 import com.hasoook.potions.ModPotions;
 import com.hasoook.recipes.CopyEnchantmentBook;
+import com.hasoook.recipes.LureSwords;
 import com.hasoook.recipes.WrittenBookPage;
 import com.hasoook.util.ModCustomTrades;
 import net.fabricmc.api.ModInitializer;
@@ -26,6 +27,7 @@ public class Hasoook implements ModInitializer {
 
 	public static final RecipeSerializer<CopyEnchantmentBook> COPY_ENCHANTMENT_BOOK = RecipeSerializer.register("copy_enchantment_book", new SpecialRecipeSerializer<>(CopyEnchantmentBook::new));
 	public static final RecipeSerializer<WrittenBookPage> WRITTEN_BOOK_PAGE = RecipeSerializer.register("written_book_page", new SpecialRecipeSerializer<>(WrittenBookPage::new));
+	public static final RecipeSerializer<LureSwords> LURE_SWORDS = RecipeSerializer.register("lure_swords", new SpecialRecipeSerializer<>(LureSwords::new));
 
 	@Override
 	public void onInitialize() {
