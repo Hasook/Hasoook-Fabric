@@ -31,11 +31,11 @@ public class LureSwords extends SpecialCraftingRecipe {
         for (int i = 0; i < inventory.size(); ++i) {
             ItemStack stack = inventory.getStack(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof SwordItem) {
+                if (stack.getItem() instanceof SwordItem && EnchantmentHelper.getLevel(Enchantments.LURE, stack) == 0) {
                     swordCount++;
                 } else if (stack.getItem() == Items.FISHING_ROD) {
                     fishingRodCount++;
-                } else fishingRodCount++;
+                } else fishingRodCount -= 9;
             }
         }
         return swordCount == 1 && fishingRodCount == 1;
@@ -49,13 +49,13 @@ public class LureSwords extends SpecialCraftingRecipe {
         for (int i = 0; i < inventory.size(); ++i) {
             ItemStack stack = inventory.getStack(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof SwordItem) {
+                if (stack.getItem() instanceof SwordItem && EnchantmentHelper.getLevel(Enchantments.LURE, stack) == 0) {
                     swordCount++;
                     itemSlot = i;
                 } else if (stack.getItem() == Items.FISHING_ROD) {
                     fishingRodCount++;
                 } else {
-                    fishingRodCount++;
+                    fishingRodCount -= 9;
                 }
             }
         }
