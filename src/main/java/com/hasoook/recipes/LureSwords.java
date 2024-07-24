@@ -1,12 +1,8 @@
 package com.hasoook.recipes;
 
-import com.google.common.collect.ImmutableMap;
-import com.hasoook.enchantment.ModEnchantments;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.inventory.RecipeInputInventory;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.SwordItem;
