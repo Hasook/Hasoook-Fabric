@@ -31,7 +31,7 @@ public abstract class TridentEntityMixin extends Entity {
         // 三叉戟是否有飞雷神附魔
         if (EnchantmentHelper.getLevel(ModEnchantments.Hiraishin, trident.getItemStack()) > 0) {
             int sharpnessLevel = EnchantmentHelper.getLevel(ModEnchantments.Hiraishin, trident.getItemStack());
-            int distance = sharpnessLevel * 16;
+            int distance = 16 + sharpnessLevel * 16;
             // 检查玩家是否在潜行
             if (owner != null && owner.isSneaking()) {
                 // 所有者与三叉戟之间的距离

@@ -30,7 +30,7 @@ public class Hiraishin extends Enchantment {
     }
 
     public boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.LOYALTY && other != Enchantments.CHANNELING && other != Enchantments.RIPTIDE;
-        // 与忠诚、引雷、激流不兼容
+        return super.canAccept(other) && other != Enchantments.LOYALTY  && other != Enchantments.RIPTIDE;
+        // 与忠诚、激流不兼容
     }
 }
