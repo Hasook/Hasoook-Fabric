@@ -57,7 +57,7 @@ public abstract class LureItemBobberRendererMixin extends EntityRenderer {
             int j = playerEntity.getMainArm() == Arm.RIGHT ? 1 : -1;
             ItemStack itemStack = playerEntity.getMainHandStack();
             ItemStack offhandStack = playerEntity.getStackInHand(Hand.OFF_HAND);
-            if (offhandStack.isOf(Items.FISHING_ROD)) {
+            if (!itemStack.isOf(Items.FISHING_ROD) && offhandStack.isOf(Items.FISHING_ROD)) {
                 j = -j;
             } else if (EnchantmentHelper.getLevel(Enchantments.LURE, offhandStack) > 0 && !itemStack.isOf(Items.FISHING_ROD)) {
                 j = -j;
