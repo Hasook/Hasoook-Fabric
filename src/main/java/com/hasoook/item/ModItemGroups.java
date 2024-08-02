@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(Items.ENCHANTED_BOOK)).entries((displayContext, entries) -> {
                         entries.add(Items.SUGAR); // 原版物品
                         entries.add(ModItems.RUBY); // 模组物品
+                        entries.add(ModItems.TOTEM_OF_SURRENDER); // 模组物品
                         entries.add(ModBlocks.RUBY_BLOCK); // 模组方块
                         entries.add(ModBlocks.AIRBLOCK); // 空气方块
                         entries.add(ModItems.ONE_HIT_OBLITERATOR); // 必杀之剑
